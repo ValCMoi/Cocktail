@@ -16,4 +16,8 @@ export class ApiService {
   public get(url: String): Observable<any> {
     return this.http.get('http://'+API_URL + '/api/' + url).pipe(map(res => res));
   }
+
+  public post(url: String, body:Object = {}): Observable<any> {
+    return this.http.post('http://'+API_URL + '/api/' + url, body).pipe(map(res => res));
+  }
 }

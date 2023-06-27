@@ -5,6 +5,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.setGlobalPrefix('api')
+  app.enableCors({origin:"172.20.7.*"})
 
   const optionsSwagger = new DocumentBuilder()
 
