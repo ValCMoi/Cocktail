@@ -1,0 +1,11 @@
+nav{
+    background: var(--primary);
+    text-align: center;
+    height: 4.5rem;
+    display: flex;
+}
+
+.titleApp{
+    margin: auto;
+    width: fit-content;
+}
