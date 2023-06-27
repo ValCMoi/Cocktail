@@ -1,4 +1,4 @@
 export class Task{
-    uuid:string = "NA"
-    description:string = "NA"
+    uuid?:string
+    description?:string
 }

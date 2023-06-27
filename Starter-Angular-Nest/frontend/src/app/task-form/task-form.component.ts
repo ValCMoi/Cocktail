@@ -16,7 +16,7 @@ export class TaskFormComponent {
     console.log('Le formulaire a été soumis');
     console.log(this.task);
     // Appel à votre service ApiService pour enregistrer la tâche
-    this.apiService.post('task', this.task).subscribe(() => {
+    this.apiService.post('task', {...this.task}).subscribe(() => {
       // Réinitialiser le formulaire après l'enregistrement réussi
       this.task = new Task();
     });
