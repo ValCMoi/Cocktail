@@ -1,6 +1,9 @@
-<form class="mAuto bPrimary">
-    <input type="text" name="description"  required>
-    <button type="submit">
-        Ajouter
-    </button>
-</form>
+<form class="mAuto bPrimary" (ngSubmit)="onSubmit()" #taskForm="ngForm">
+    <div>
+      <label>Description:</label>
+      <input type="text" name="description" [(ngModel)]="task.description" required>
+    </div>
+    <!-- Autres champs de formulaire ici -->
+    <button type="submit">Ajouter</button>
+  </form>
+  
